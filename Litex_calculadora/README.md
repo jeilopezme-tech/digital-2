@@ -75,3 +75,5 @@ En cada simulación se comparó el resultado obtenido con el resultado esperado 
 # Conclusión
 
 Con este proyecto fue posible desarrollar una calculadora digital utilizando LiteX y Verilog. La organización por módulos permitió trabajar cada operación de forma independiente, facilitando las pruebas y la corrección de errores. Además, las simulaciones ayudaron a comprobar que el sistema funcionara correctamente antes de llevarlo a la FPGA.
+##Diagrama de flujo y caja negra
+<img width="1012" height="1460" alt="3a013ac5-e02d-412b-a557-a37ece5b2b6d" src="https://github.com/user-attachments/assets/6cb23e1f-4b96-4b99-a4fd-b7cc88bd512d" />
