@@ -1,0 +1,25 @@
+flowchart TD
+
+A[Inicio] --> B[Inicializar I2C]
+B --> C[Generar condición START]
+C --> D[Enviar dirección del esclavo]
+D --> E{ACK recibido?}
+
+E -- No --> F[Reintentar]
+F --> D
+
+E -- Sí --> G[Enviar registro]
+
+G --> H{ACK?}
+
+H -- No --> I[STOP]
+
+H -- Sí --> J[Leer o escribir dato]
+
+J --> K{Más datos?}
+
+K -- Sí --> J
+
+K -- No --> L[Generar STOP]
+
+L --> M[Fin]
