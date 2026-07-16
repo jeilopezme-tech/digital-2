@@ -2,19 +2,22 @@ Protocolo I2C en Verilog (Maestro y Esclavo)
 Descripción
 
 En este proyecto se implementó el protocolo I2C utilizando Verilog. El diseño está compuesto por un módulo maestro y un módulo esclavo que simula una memoria EEPROM. La idea fue desarrollar la comunicación entre ambos dispositivos y comprobar mediante simulación que el intercambio de datos se realiza correctamente.
+## Estructura del Proyecto
 
-Organización del proyecto
+El repositorio está organizado de la siguiente manera:
 
-El proyecto está dividido en tres carpetas principales:
-
+```text
 ├── src/
-│   ├── i2c_master.v
-│   └── i2c_slave.v
+│   ├── i2c_master.v   # Controlador Maestro I2C estructurado por comandos
+│   └── i2c_slave.v    # Modelo de Esclavo EEPROM 24C02 (256 bytes)
 ├── tb/
-│   └── tb_i2c.v
+│   └── tb_i2c.v       # Banco de pruebas (Testbench) autocontenido
 └── sim/
-    ├── sim.log
-    └── i2c_simulation.vcd
+    ├── sim.log        # Log de salida de la última simulación
+    └── i2c_simulation.vcd  # Formato de ondas VCD para análisis
+```
+
+---
 Carpeta src
 
 Aquí está el código principal del proyecto.
