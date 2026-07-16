@@ -66,12 +66,6 @@ stateDiagram-v2
 
 El proyecto ha sido completamente verificado usando **Icarus Verilog** y **GTKWave**.
 
-### Requisitos Previos
-
-Asegúrate de tener instalado `iverilog` y `vvp` en tu sistema:
-```bash
-sudo apt-get install iverilog
-```
 
 ### Ejecutar Simulación
 
